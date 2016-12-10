@@ -41,6 +41,8 @@ var user = require('./routes/user');
 app.use('/api/user', user);
 var sensor = require('./routes/sensor');
 app.use('/api/sensor', sensor);
+var state = require('./routes/state');
+app.use('/api/state', state);
 
 
 /// catch 404 and forwarding to error handler

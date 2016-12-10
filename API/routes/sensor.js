@@ -9,6 +9,9 @@ var idGenerator = require('../helpers/idGenerator.js');
 var SensorsSchema = require('../models/SensorsSchema.js');
 var SensorsModel = require('../models/SensorsModel.js').SensorsModel;
 
+var StatesSchema = require('../models/StatesSchema.js');
+var StatesModel = require('../models/StatesModel.js').StatesModel;
+
 //auth
 // var jwt = require('jsonwebtoken');
 
@@ -91,6 +94,7 @@ router.get('/:fromDate/:toDate/:limit', function(req, res) {
 	});
 
 });
+
 
 
 function timeConverter(UNIX_timestamp){
