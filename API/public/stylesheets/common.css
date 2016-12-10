@@ -1,0 +1,93 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+html, body {
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  min-height: 100%; }
+
+body {
+  font-family: "Lato", "helvetica neue", helvetica, arial;
+  font-size: 1.4em;
+  position: relative;
+  color: #333; }
+
+input, .button {
+  font-family: "Lato", "helvetica neue", helvetica, arial; }
+
+::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #999; }
+
+:-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #999;
+  opacity: 1; }
+
+::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #999;
+  opacity: 1; }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #999; }
+
+.clear {
+  width: 100%;
+  clear: both; }
+
+.px50 {
+  width: 100%;
+  height: 50px;
+  clear: both; }
+
+.px20 {
+  width: 100%;
+  height: 20px;
+  clear: both; }
+
+.fontColor_1 {
+  color: #333 !important; }
+
+.fontColor_2 {
+  color: #fff !important; }
+
+.fontColor_3 {
+  color: #fff !important; }
+
+.fontColor_4 {
+  color: #000 !important; }
+
+.bgColor_1 {
+  background-color: #333 !important; }
+
+.bgColor_2 {
+  background-color: #fff !important; }
+
+.bgColor_3 {
+  background-color: #fff !important; }
+
+.bgColor_4 {
+  background-color: #000 !important; }
+
+.centerText {
+  text-align: center !important; }
+
+.marginLeft15 {
+  margin-left: 15%; }
+
+.pointer {
+  cursor: pointer; }
+
+.hoverOpacity:hover {
+  opacity: 0.6; }
+
+/*Affects all screens between 1000 and 1400 px*/
+/*Affects all screens between 100 and 999 px*/
+/*Affects all screens between 100 and 699 px*/
+/*iPad landscape*/
+/*iPad portrait*/
+/*phones*/
+/*iPhone portrait*/
+
+/*# sourceMappingURL=common.css.map */

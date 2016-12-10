@@ -1,0 +1,90 @@
+$color_1: #333;	//grey
+$color_2: #fff;	//white
+$color_3: #fff; //white
+$color_4: #000; //black
+$fontOne: 'Lato', 'helvetica neue', helvetica, arial;
+$containersWidth: 70%;
+
+@mixin simpleAnimation($name,$time,$repeat) {
+  	-webkit-animation: $name $time $repeat;
+	-moz-animation:    $name $time $repeat;
+	-o-animation:      $name $time $repeat;
+	-ms-animation:     $name $time $repeat;
+	animation:         $name $time $repeat;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900);
+html, body { padding:0; margin:0; height:100%; min-height:100%; }
+body { font-family:$fontOne; font-size:1.4em; position:relative; color:$color_1; }
+input, .button { font-family:$fontOne; }
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #999;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #999;
+   opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #999;
+   opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #999;
+}
+
+.clear { width:100%; clear:both; }
+.px50 { width:100%; height:50px; clear:both; }
+.px20 { width:100%; height:20px; clear:both; }
+.fontColor_1 { color:$color_1 !important; }
+.fontColor_2 { color:$color_2 !important; }
+.fontColor_3 { color:$color_3 !important; }
+.fontColor_4 { color:$color_4 !important; }
+
+.bgColor_1 { background-color:$color_1 !important; }
+.bgColor_2 { background-color:$color_2 !important; }
+.bgColor_3 { background-color:$color_3 !important; }
+.bgColor_4 { background-color:$color_4 !important; }
+
+.centerText { text-align:center !important; }
+.marginLeft15 { margin-left:15%; }
+.pointer { cursor:pointer; }
+.hoverOpacity:hover { opacity:0.6; }
+
+
+
+/*Affects all screens between 1000 and 1400 px*/
+@media screen and (min-width: 1050px) and (max-width: 1400px) {
+	
+}
+
+/*Affects all screens between 100 and 999 px*/
+@media screen and (min-width: 100px) and (max-width: 1049px) {
+	
+}
+
+/*Affects all screens between 100 and 699 px*/
+@media screen and (min-width: 100px) and (max-width: 699px) {
+	
+}
+
+/*iPad landscape*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	
+}
+
+/*iPad portrait*/
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) { 
+	
+}
+
+/*phones*/
+@media only screen and (min-device-width : 10px) and (max-device-width : 568px) { 
+	
+}
+
+/*iPhone portrait*/
+@media only screen and (min-device-width : 10px) and (max-device-width : 568px) and (orientation : portrait) { 	
+
+}
+

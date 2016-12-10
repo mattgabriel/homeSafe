@@ -1,0 +1,24 @@
+{
+  "name": "homeSafeApi",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodejs ./bin/www"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^7.1.9",
+    "apnagent": "^1.1.3",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "~1.0.0",
+    "cookie-parser": "~1.0.1",
+    "debug": "~0.7.4",
+    "ejs": "~0.8.5",
+    "express": "~4.0.0",
+    "mongoose": "^4.0.2",
+    "morgan": "~1.0.0",
+    "node-mandrill": "^1.0.1",
+    "passport": "^0.2.1",
+    "passport-http": "^0.2.2",
+    "static-favicon": "~1.0.0"
+  }
+}

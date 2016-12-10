@@ -1,0 +1,12 @@
+{
+  "name": "HomeSafe API",
+  "version": "0.0.0",
+  "description": "HomeSafe API",
+  "title": "HomeSafe API Docs",
+  "url" : "http://localhost:3000/api",
+  "sampleUrl" : "http://localhost:3000/api",
+  "template": {
+  	"withCompare": true,
+  	"withGenerator": true
+  }
+}
