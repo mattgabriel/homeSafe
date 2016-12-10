@@ -14,22 +14,23 @@ var SensorsModel = require('../models/SensorsModel.js').SensorsModel;
 
 
 /**
- * @api {post} /sensor Create sensor entry
+ * @api {post} /sensor/:sensorId/:value Create sensor entry
  * @apiName Create sensor entry
  * @apiGroup Sensor
  *
- * @apiParam {String} data a comma delimited string of sensor values, including UTC timestamp
+ * @apiParam {String} sensorId The ID (descriptive name) of a sensor
+ * @apiParam {Double} value The value of the sensor
  * 
  * 
  * @apiExample Example usage:
- * curl -X POST http://localhost:3000/api/sensor/ -d "data=1123123123,0.4,123,10,14,57.4"
+ * curl -X POST "http://localhost:3000/api/sensor/temperature_1/12.3"
  *
  * @apiErrorExample Response (example):
  { 
  	Success: Bool
  }
  */
-router.post('/', function(req, res) {
+router.post('/:sensorId/:value', function(req, res) {
 	if(req.body.data !== undefined && req.body.data.length >= 10){
 		
 		
@@ -37,13 +38,13 @@ router.post('/', function(req, res) {
 		var sensorsModel = new SensorsModel();
 		sensorsModel.createEntry(
 			req.body.data, function(callback){
-			if(callback.success){
+			// if(callback.success){
 				return res.json({ 
-					"DataStored" : req.body.data
+					"DataStored" : req.body.sensorId
 				});	
-			} else {
-				return res.status(404).send({ error : callback.error });
-			}
+			// } else {
+				// return res.status(404).send({ error : callback.error });
+			// }
 		});
 
 	} else {

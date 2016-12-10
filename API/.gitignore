@@ -1,5 +1,0 @@
-public/stylesheets/*.map
-.sass-cache
-public/apiDocs
-node_modules
-data/
