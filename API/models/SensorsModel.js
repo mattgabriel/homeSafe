@@ -43,14 +43,15 @@ function SensorsModel() {
         // });
     }
 
-    this.getDetailsForUser = function(UserId, callback){
-        // var fields = { "_id":0, "UserId":1,"Email":1,"Username":1,"Names":1,"Role":1,"Image":1,"Language":1,"DateLastLogin":1,"DateCreated":1 };
-        // UsersSchema.findOne({ "UserId" : UserId }, fields, function(err, data){
-        //     if(err) return callback(false);
-        //     return callback(data);            
-        // });
-    }
+    this.getDataWithinRange = function(fromDate, toDate, callback){
+        var f = new Date(fromDate * 1000);
+        var t = new Date(fromDate * 1000);
 
+        var fields = { "SensorId":1,"Value":1, "Timestamp":1 };
+        SensorsSchema.find({"Timestamp": {"$gte": new Date(f.getFullYear(),f.getMonth(),f.getDate())}}, fields, function(err1, data1){  
+            return callback(data1);
+        });
+    }
     /************************
      * PRIVATE METHODS
      ***********************/

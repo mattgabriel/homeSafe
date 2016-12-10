@@ -50,7 +50,59 @@ router.post('/:sensorId/:value', function(req, res) {
 });
 
 
+/**
+ * @api {get} /:fromDate/:toDate Get data from date to date
+ * @apiName GetSensorData
+ * @apiGroup Sensor
+ * @apiPermission admin, user
+ *
+ * @apiParam {Int} fromDate From date (UTC timestamp)
+ * @apiParam {Int} toDate To date (UTC timestamp)
+ * 
+ * @apiSampleRequest http://localhost:3000/api/sensor/:fromDate/:toDate
+ * @apiExample Example usage:
+ * curl -X GET http://localhost:3000/api/sensor/123123123/12312312312
+ *
+ * @apiErrorExample Response (example):
+ {
+    "DateCreated": Date
+}
+ */
+router.get('/:fromDate/:toDate', function(req, res) {
+	var sensorsModel = new SensorsModel();
+	//get user details
+	var fromDate = timeConverter(parseInt(req.params.fromDate));
+	var toDate = timeConverter(parseInt(req.params.toDate));
+
+	var date = new Date(fromDate*1000);
+
+	sensorsModel.getDataWithinRange(parseInt(req.params.fromDate), parseInt(req.params.toDate), function(callback){
+		return res.json({ "From": fromDate, "To": toDate, "Data" : callback });
+	});
+
+});
 
 
+function timeConverter(UNIX_timestamp){
+  var a = new Date(UNIX_timestamp * 1000);
+  var months = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  var year = a.getFullYear();
+  var month = months[a.getMonth()];
+  var date = a.getDate();
+  var hour = a.getHours();
+  var min = a.getMinutes();
+  var sec = a.getSeconds();
+  var am = "AM";
+  if(hour > 12){
+  	hour = hour - 12;
+  	am = "PM";
+  }
+  if(min < 10){
+  	min = "0" + min;
+  }
+  //var time = date + ' ' + month + ' ' + year + ' ' + hour + ':' + min + ':' + sec ;
+  var time = month + ' ' + date + ', ' + year + ' ' + hour + ':' + min + ' ' + am;
+  return time;
+}
 
 module.exports = router;
