@@ -30,26 +30,23 @@ var SensorsModel = require('../models/SensorsModel.js').SensorsModel;
  	Success: Bool
  }
  */
-router.post('/:sensorId/:value', function(req, res) {
-	if(req.body.data !== undefined && req.body.data.length >= 10){
-		
-		
-		//Create a new sensor entry and store it on the DB
-		var sensorsModel = new SensorsModel();
-		sensorsModel.createEntry(
-			req.body.data, function(callback){
-			// if(callback.success){
-				return res.json({ 
-					"DataStored" : req.body.sensorId
-				});	
-			// } else {
-				// return res.status(404).send({ error : callback.error });
-			// }
-		});
+router.post('/:sensorId/:value', function(req, res) {		
+	//Create a new sensor entry and store it on the DB
+	var sensorsModel = new SensorsModel();
 
-	} else {
-		return res.status(404).send({ error: 'Missing parameters.' });
-	}
+	var val = parseInt(req.params.value);
+
+	sensorsModel.createEntry(
+		req.params.sensorId,
+		val, function(callback){
+		if(callback.success){
+			return res.json({ 
+				"DataStored" : callback.success
+			});	
+		} else {
+			return res.status(404).send({ error : callback.error });
+		}
+	});
 });
 
 

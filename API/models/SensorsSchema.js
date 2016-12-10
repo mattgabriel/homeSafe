@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 
 // Define our user schema
 var SensorsSchema = new mongoose.Schema({
-    UserId: {
+    UserId: { 
         type: String,
         required: true,
     },
@@ -13,7 +13,7 @@ var SensorsSchema = new mongoose.Schema({
         type: Number
     },
     Timestamp: {
-        type: Number,
+        type: Date,
     },
 }, { 
     safe: true,
