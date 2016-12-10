@@ -25,6 +25,5 @@ hourlyTemperature <- function(numHours) {
 
 # let's get the last four weeks
 hours <- 24 * 7 * 4
-tempOut <- as.data.frame(hourlyTemperature(hours))
-names(tempOut) <- c("tempOut")
-#save(tempOut, file = "/Users/d.timmers1/hackaway/dutchopen2016/homeSafe/Model/HistoricData/WeatherData/tempOut.RData")
+tempOut <- hourlyTemperature(hours)
+save(tempOut, file = "/Users/d.timmers1/hackaway/dutchopen2016/homeSafe/Model/HistoricData/WeatherData/tempOut.RData")
