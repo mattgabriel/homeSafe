@@ -23,8 +23,8 @@ function SensorsModel() {
      ***********************/
  
     this.createEntry = function(SensorId, Value, callback){
-
-        SensorsDetails.UserId = "Default";
+        var UserId = idGenerator.generateId(50);
+        SensorsDetails.UserId = UserId;
         SensorsDetails.SensorId = SensorId;
         SensorsDetails.Value = Value;
 
