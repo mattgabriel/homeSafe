@@ -65,7 +65,15 @@ router.post('/:sensorId/:value', function(req, res) {
  *
  * @apiErrorExample Response (example):
  {
-    "DateCreated": Date
+    "From": "December 5, 2016 11:43 PM",
+    "To": "January 20, 2017 3:03 AM",
+    "Data": [
+        {
+            "SensorId": "Humidity_1",
+            "Value": 41,
+            "Timestamp": "2016-12-10T14:22:04.419Z"
+        },
+        ...
 }
  */
 router.get('/:fromDate/:toDate', function(req, res) {
