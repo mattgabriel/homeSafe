@@ -43,13 +43,21 @@ function SensorsModel() {
         // });
     }
 
-    this.getDataWithinRange = function(fromDate, toDate, callback){
+    this.getDataWithinRange = function(fromDate, toDate, limit, callback){
         var f = new Date(fromDate * 1000);
         var t = new Date(fromDate * 1000);
 
         var fields = { "SensorId":1,"Value":1, "Timestamp":1 };
-        SensorsSchema.find({"Timestamp": {"$gte": new Date(f.getFullYear(),f.getMonth(),f.getDate())}}, fields, function(err1, data1){  
-            return callback(data1);
+        SensorsSchema.find({"Timestamp": {"$gte": new Date(f.getFullYear(),f.getMonth(),f.getDate())}}, fields, {sort: {"Timestamp": -1}}, function(err1, data1){  
+            var result = [];
+            if(data1.length < limit){
+                return callback(data1);    
+            }
+            for (var i=0; i<limit; i++){
+                result.push(data1[i]);
+            }
+            return callback(result);    
+            
         });
     }
     /************************

@@ -51,17 +51,18 @@ router.post('/:sensorId/:value', function(req, res) {
 
 
 /**
- * @api {get} /:fromDate/:toDate Get data from date to date
+ * @api {get} /:fromDate/:toDate/:limit Get data from date to date
  * @apiName GetSensorData
  * @apiGroup Sensor
  * @apiPermission admin, user
  *
  * @apiParam {Int} fromDate From date (UTC timestamp)
  * @apiParam {Int} toDate To date (UTC timestamp)
+ * @apiParam {Int} limit Number of results to return
  * 
- * @apiSampleRequest http://localhost:3000/api/sensor/:fromDate/:toDate
+ * @apiSampleRequest http://localhost:3000/api/sensor/:fromDate/:toDate/:limit
  * @apiExample Example usage:
- * curl -X GET http://localhost:3000/api/sensor/123123123/12312312312
+ * curl -X GET http://localhost:3000/api/sensor/123123123/12312312312/20
  *
  * @apiErrorExample Response (example):
  {
@@ -76,15 +77,16 @@ router.post('/:sensorId/:value', function(req, res) {
         ...
 }
  */
-router.get('/:fromDate/:toDate', function(req, res) {
+router.get('/:fromDate/:toDate/:limit', function(req, res) {
 	var sensorsModel = new SensorsModel();
 	//get user details
 	var fromDate = timeConverter(parseInt(req.params.fromDate));
 	var toDate = timeConverter(parseInt(req.params.toDate));
+	var limit = parseInt(req.params.limit);
 
 	var date = new Date(fromDate*1000);
 
-	sensorsModel.getDataWithinRange(parseInt(req.params.fromDate), parseInt(req.params.toDate), function(callback){
+	sensorsModel.getDataWithinRange(parseInt(req.params.fromDate), parseInt(req.params.toDate), limit, function(callback){
 		return res.json({ "From": fromDate, "To": toDate, "Data" : callback });
 	});
 
