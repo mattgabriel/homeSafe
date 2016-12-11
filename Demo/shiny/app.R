@@ -17,7 +17,7 @@ ui <- dashboardPage(
       # Tab content for live data
       tabItem(tabName = "live_data",
               fluidRow(
-                box(plotOutput("plot1", height = 250))
+                box(width = 12, plotOutput("plotLive", height = 800))
               )
       ),
       
@@ -30,14 +30,15 @@ ui <- dashboardPage(
 )
 
 server <- function(input, output, session) {
-  refreshRate <- 5 * 1000 #milliseconds
+  refreshRate <- 4 * 1000 #milliseconds
   
   sourceData <- reactive({
     invalidateLater(refreshRate, session)
     
-    getData()
-  })  
+    getLiveData()
+  }) 
   
+  output$plotLive <- renderPlot({ plotLiveData(sourceData()) })
 }
 
 shinyApp(ui, server)
