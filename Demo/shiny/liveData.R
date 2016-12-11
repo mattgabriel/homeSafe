@@ -25,7 +25,7 @@ getLiveData <- function() {
   
   # some parsing things
   df %<>%
-    dplyr::filter(sensor != "AirQuality_1") %>%
+    dplyr::filter(! grepl("AirQuality", sensor)) %>%
     dplyr::mutate(value = as.numeric(charValue)) %>%
     dplyr::arrange(ts_str)
   
