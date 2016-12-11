@@ -1,0 +1,6 @@
+framework module Pods_Autonome {
+  umbrella header "Pods-Autonome-umbrella.h"
+
+  export *
+  module * { export * }
+}

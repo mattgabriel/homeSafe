@@ -1,0 +1,660 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		72ABA5CE929F4FEFE0EEECAB /* Pods_Autonome.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7EDDC1BB35EA1EA03E26836 /* Pods_Autonome.framework */; };
+		C561032C1DFCAED500F4614A /* logo_longer.png in Resources */ = {isa = PBXBuildFile; fileRef = C561032B1DFCAED500F4614A /* logo_longer.png */; };
+		C561032E1DFCB0D100F4614A /* SensorsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C561032D1DFCB0D100F4614A /* SensorsView.swift */; };
+		C56103301DFCCE2D00F4614A /* map.png in Resources */ = {isa = PBXBuildFile; fileRef = C561032F1DFCCE2D00F4614A /* map.png */; };
+		C56103321DFCCE4800F4614A /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C56103311DFCCE4800F4614A /* MapView.swift */; };
+		C5FDEB051DFC85F30036FFDA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FDEB041DFC85F30036FFDA /* AppDelegate.swift */; };
+		C5FDEB071DFC85F30036FFDA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FDEB061DFC85F30036FFDA /* ViewController.swift */; };
+		C5FDEB0A1DFC85F30036FFDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FDEB081DFC85F30036FFDA /* Main.storyboard */; };
+		C5FDEB0D1DFC85F30036FFDA /* Autonome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C5FDEB0B1DFC85F30036FFDA /* Autonome.xcdatamodeld */; };
+		C5FDEB0F1DFC85F30036FFDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C5FDEB0E1DFC85F30036FFDA /* Assets.xcassets */; };
+		C5FDEB121DFC85F30036FFDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C5FDEB101DFC85F30036FFDA /* LaunchScreen.storyboard */; };
+		C5FDEB1D1DFC85F30036FFDA /* AutonomeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FDEB1C1DFC85F30036FFDA /* AutonomeTests.swift */; };
+		C5FDEB281DFC85F30036FFDA /* AutonomeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FDEB271DFC85F30036FFDA /* AutonomeUITests.swift */; };
+		C5FDEB361DFC87A50036FFDA /* Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5FDEB351DFC87A40036FFDA /* Design.swift */; };
+		C5FDEB381DFC888A0036FFDA /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = C5FDEB371DFC88890036FFDA /* logo.png */; };
+		C5FDEB3A1DFC8AEA0036FFDA /* logo_long.png in Resources */ = {isa = PBXBuildFile; fileRef = C5FDEB391DFC8AEA0036FFDA /* logo_long.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C5FDEB191DFC85F30036FFDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5FDEAF91DFC85F20036FFDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5FDEB001DFC85F30036FFDA;
+			remoteInfo = Autonome;
+		};
+		C5FDEB241DFC85F30036FFDA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C5FDEAF91DFC85F20036FFDA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C5FDEB001DFC85F30036FFDA;
+			remoteInfo = Autonome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		733CAC0D1CD8DCEC5E5F7644 /* Pods-Autonome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Autonome.release.xcconfig"; path = "Pods/Target Support Files/Pods-Autonome/Pods-Autonome.release.xcconfig"; sourceTree = "<group>"; };
+		9965DE058F2A73D6D76A704C /* Pods-Autonome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Autonome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Autonome/Pods-Autonome.debug.xcconfig"; sourceTree = "<group>"; };
+		C561032B1DFCAED500F4614A /* logo_longer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_longer.png; sourceTree = "<group>"; };
+		C561032D1DFCB0D100F4614A /* SensorsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SensorsView.swift; sourceTree = "<group>"; };
+		C561032F1DFCCE2D00F4614A /* map.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = map.png; sourceTree = "<group>"; };
+		C56103311DFCCE4800F4614A /* MapView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		C5FDEB011DFC85F30036FFDA /* Autonome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Autonome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5FDEB041DFC85F30036FFDA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		C5FDEB061DFC85F30036FFDA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C5FDEB091DFC85F30036FFDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C5FDEB0C1DFC85F30036FFDA /* Autonome.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Autonome.xcdatamodel; sourceTree = "<group>"; };
+		C5FDEB0E1DFC85F30036FFDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C5FDEB111DFC85F30036FFDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C5FDEB131DFC85F30036FFDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5FDEB181DFC85F30036FFDA /* AutonomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutonomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5FDEB1C1DFC85F30036FFDA /* AutonomeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutonomeTests.swift; sourceTree = "<group>"; };
+		C5FDEB1E1DFC85F30036FFDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5FDEB231DFC85F30036FFDA /* AutonomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AutonomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5FDEB271DFC85F30036FFDA /* AutonomeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutonomeUITests.swift; sourceTree = "<group>"; };
+		C5FDEB291DFC85F30036FFDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C5FDEB351DFC87A40036FFDA /* Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Design.swift; sourceTree = "<group>"; };
+		C5FDEB371DFC88890036FFDA /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		C5FDEB391DFC8AEA0036FFDA /* logo_long.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo_long.png; sourceTree = "<group>"; };
+		C7EDDC1BB35EA1EA03E26836 /* Pods_Autonome.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Autonome.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C5FDEAFE1DFC85F30036FFDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				72ABA5CE929F4FEFE0EEECAB /* Pods_Autonome.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5FDEB151DFC85F30036FFDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5FDEB201DFC85F30036FFDA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75D54D654C899D46AEFBB6B7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9965DE058F2A73D6D76A704C /* Pods-Autonome.debug.xcconfig */,
+				733CAC0D1CD8DCEC5E5F7644 /* Pods-Autonome.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9EDD34D1B6E841DC8FFABEF7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C7EDDC1BB35EA1EA03E26836 /* Pods_Autonome.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C5FDEAF81DFC85F20036FFDA = {
+			isa = PBXGroup;
+			children = (
+				C5FDEB031DFC85F30036FFDA /* Autonome */,
+				C5FDEB1B1DFC85F30036FFDA /* AutonomeTests */,
+				C5FDEB261DFC85F30036FFDA /* AutonomeUITests */,
+				C5FDEB021DFC85F30036FFDA /* Products */,
+				75D54D654C899D46AEFBB6B7 /* Pods */,
+				9EDD34D1B6E841DC8FFABEF7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C5FDEB021DFC85F30036FFDA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C5FDEB011DFC85F30036FFDA /* Autonome.app */,
+				C5FDEB181DFC85F30036FFDA /* AutonomeTests.xctest */,
+				C5FDEB231DFC85F30036FFDA /* AutonomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C5FDEB031DFC85F30036FFDA /* Autonome */ = {
+			isa = PBXGroup;
+			children = (
+				C5FDEB041DFC85F30036FFDA /* AppDelegate.swift */,
+				C5FDEB061DFC85F30036FFDA /* ViewController.swift */,
+				C561032D1DFCB0D100F4614A /* SensorsView.swift */,
+				C56103311DFCCE4800F4614A /* MapView.swift */,
+				C5FDEB081DFC85F30036FFDA /* Main.storyboard */,
+				C5FDEB0E1DFC85F30036FFDA /* Assets.xcassets */,
+				C5FDEB101DFC85F30036FFDA /* LaunchScreen.storyboard */,
+				C5FDEB131DFC85F30036FFDA /* Info.plist */,
+				C5FDEB0B1DFC85F30036FFDA /* Autonome.xcdatamodeld */,
+				C5FDEB351DFC87A40036FFDA /* Design.swift */,
+				C561032F1DFCCE2D00F4614A /* map.png */,
+				C561032B1DFCAED500F4614A /* logo_longer.png */,
+				C5FDEB391DFC8AEA0036FFDA /* logo_long.png */,
+				C5FDEB371DFC88890036FFDA /* logo.png */,
+			);
+			path = Autonome;
+			sourceTree = "<group>";
+		};
+		C5FDEB1B1DFC85F30036FFDA /* AutonomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				C5FDEB1C1DFC85F30036FFDA /* AutonomeTests.swift */,
+				C5FDEB1E1DFC85F30036FFDA /* Info.plist */,
+			);
+			path = AutonomeTests;
+			sourceTree = "<group>";
+		};
+		C5FDEB261DFC85F30036FFDA /* AutonomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C5FDEB271DFC85F30036FFDA /* AutonomeUITests.swift */,
+				C5FDEB291DFC85F30036FFDA /* Info.plist */,
+			);
+			path = AutonomeUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C5FDEB001DFC85F30036FFDA /* Autonome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5FDEB2C1DFC85F30036FFDA /* Build configuration list for PBXNativeTarget "Autonome" */;
+			buildPhases = (
+				B251D6BF7C59D617C084B069 /* [CP] Check Pods Manifest.lock */,
+				C5FDEAFD1DFC85F30036FFDA /* Sources */,
+				C5FDEAFE1DFC85F30036FFDA /* Frameworks */,
+				C5FDEAFF1DFC85F30036FFDA /* Resources */,
+				FE72CF1F1E635F45EDDDAC1F /* [CP] Embed Pods Frameworks */,
+				A3C2E2C1662091B8E65F68EF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Autonome;
+			productName = Autonome;
+			productReference = C5FDEB011DFC85F30036FFDA /* Autonome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C5FDEB171DFC85F30036FFDA /* AutonomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5FDEB2F1DFC85F30036FFDA /* Build configuration list for PBXNativeTarget "AutonomeTests" */;
+			buildPhases = (
+				C5FDEB141DFC85F30036FFDA /* Sources */,
+				C5FDEB151DFC85F30036FFDA /* Frameworks */,
+				C5FDEB161DFC85F30036FFDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5FDEB1A1DFC85F30036FFDA /* PBXTargetDependency */,
+			);
+			name = AutonomeTests;
+			productName = AutonomeTests;
+			productReference = C5FDEB181DFC85F30036FFDA /* AutonomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C5FDEB221DFC85F30036FFDA /* AutonomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C5FDEB321DFC85F30036FFDA /* Build configuration list for PBXNativeTarget "AutonomeUITests" */;
+			buildPhases = (
+				C5FDEB1F1DFC85F30036FFDA /* Sources */,
+				C5FDEB201DFC85F30036FFDA /* Frameworks */,
+				C5FDEB211DFC85F30036FFDA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C5FDEB251DFC85F30036FFDA /* PBXTargetDependency */,
+			);
+			name = AutonomeUITests;
+			productName = AutonomeUITests;
+			productReference = C5FDEB231DFC85F30036FFDA /* AutonomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C5FDEAF91DFC85F20036FFDA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Matt Gabriel";
+				TargetAttributes = {
+					C5FDEB001DFC85F30036FFDA = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8SHV2728N7;
+						ProvisioningStyle = Automatic;
+					};
+					C5FDEB171DFC85F30036FFDA = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8SHV2728N7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C5FDEB001DFC85F30036FFDA;
+					};
+					C5FDEB221DFC85F30036FFDA = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = 8SHV2728N7;
+						ProvisioningStyle = Automatic;
+						TestTargetID = C5FDEB001DFC85F30036FFDA;
+					};
+				};
+			};
+			buildConfigurationList = C5FDEAFC1DFC85F20036FFDA /* Build configuration list for PBXProject "Autonome" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C5FDEAF81DFC85F20036FFDA;
+			productRefGroup = C5FDEB021DFC85F30036FFDA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C5FDEB001DFC85F30036FFDA /* Autonome */,
+				C5FDEB171DFC85F30036FFDA /* AutonomeTests */,
+				C5FDEB221DFC85F30036FFDA /* AutonomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C5FDEAFF1DFC85F30036FFDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5FDEB3A1DFC8AEA0036FFDA /* logo_long.png in Resources */,
+				C561032C1DFCAED500F4614A /* logo_longer.png in Resources */,
+				C5FDEB381DFC888A0036FFDA /* logo.png in Resources */,
+				C5FDEB121DFC85F30036FFDA /* LaunchScreen.storyboard in Resources */,
+				C56103301DFCCE2D00F4614A /* map.png in Resources */,
+				C5FDEB0F1DFC85F30036FFDA /* Assets.xcassets in Resources */,
+				C5FDEB0A1DFC85F30036FFDA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5FDEB161DFC85F30036FFDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5FDEB211DFC85F30036FFDA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A3C2E2C1662091B8E65F68EF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Autonome/Pods-Autonome-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B251D6BF7C59D617C084B069 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FE72CF1F1E635F45EDDDAC1F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Autonome/Pods-Autonome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C5FDEAFD1DFC85F30036FFDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C561032E1DFCB0D100F4614A /* SensorsView.swift in Sources */,
+				C56103321DFCCE4800F4614A /* MapView.swift in Sources */,
+				C5FDEB071DFC85F30036FFDA /* ViewController.swift in Sources */,
+				C5FDEB361DFC87A50036FFDA /* Design.swift in Sources */,
+				C5FDEB051DFC85F30036FFDA /* AppDelegate.swift in Sources */,
+				C5FDEB0D1DFC85F30036FFDA /* Autonome.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5FDEB141DFC85F30036FFDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5FDEB1D1DFC85F30036FFDA /* AutonomeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C5FDEB1F1DFC85F30036FFDA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5FDEB281DFC85F30036FFDA /* AutonomeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C5FDEB1A1DFC85F30036FFDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5FDEB001DFC85F30036FFDA /* Autonome */;
+			targetProxy = C5FDEB191DFC85F30036FFDA /* PBXContainerItemProxy */;
+		};
+		C5FDEB251DFC85F30036FFDA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C5FDEB001DFC85F30036FFDA /* Autonome */;
+			targetProxy = C5FDEB241DFC85F30036FFDA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C5FDEB081DFC85F30036FFDA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5FDEB091DFC85F30036FFDA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C5FDEB101DFC85F30036FFDA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C5FDEB111DFC85F30036FFDA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C5FDEB2A1DFC85F30036FFDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		C5FDEB2B1DFC85F30036FFDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C5FDEB2D1DFC85F30036FFDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9965DE058F2A73D6D76A704C /* Pods-Autonome.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8SHV2728N7;
+				INFOPLIST_FILE = Autonome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mattgabriel.Autonome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		C5FDEB2E1DFC85F30036FFDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 733CAC0D1CD8DCEC5E5F7644 /* Pods-Autonome.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 8SHV2728N7;
+				INFOPLIST_FILE = Autonome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mattgabriel.Autonome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		C5FDEB301DFC85F30036FFDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8SHV2728N7;
+				INFOPLIST_FILE = AutonomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mattgabriel.AutonomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Autonome.app/Autonome";
+			};
+			name = Debug;
+		};
+		C5FDEB311DFC85F30036FFDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 8SHV2728N7;
+				INFOPLIST_FILE = AutonomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mattgabriel.AutonomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Autonome.app/Autonome";
+			};
+			name = Release;
+		};
+		C5FDEB331DFC85F30036FFDA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8SHV2728N7;
+				INFOPLIST_FILE = AutonomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mattgabriel.AutonomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Autonome;
+			};
+			name = Debug;
+		};
+		C5FDEB341DFC85F30036FFDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 8SHV2728N7;
+				INFOPLIST_FILE = AutonomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = mattgabriel.AutonomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Autonome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C5FDEAFC1DFC85F20036FFDA /* Build configuration list for PBXProject "Autonome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5FDEB2A1DFC85F30036FFDA /* Debug */,
+				C5FDEB2B1DFC85F30036FFDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5FDEB2C1DFC85F30036FFDA /* Build configuration list for PBXNativeTarget "Autonome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5FDEB2D1DFC85F30036FFDA /* Debug */,
+				C5FDEB2E1DFC85F30036FFDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5FDEB2F1DFC85F30036FFDA /* Build configuration list for PBXNativeTarget "AutonomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5FDEB301DFC85F30036FFDA /* Debug */,
+				C5FDEB311DFC85F30036FFDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C5FDEB321DFC85F30036FFDA /* Build configuration list for PBXNativeTarget "AutonomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C5FDEB331DFC85F30036FFDA /* Debug */,
+				C5FDEB341DFC85F30036FFDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C5FDEB0B1DFC85F30036FFDA /* Autonome.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C5FDEB0C1DFC85F30036FFDA /* Autonome.xcdatamodel */,
+			);
+			currentVersion = C5FDEB0C1DFC85F30036FFDA /* Autonome.xcdatamodel */;
+			path = Autonome.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C5FDEAF91DFC85F20036FFDA /* Project object */;
+}

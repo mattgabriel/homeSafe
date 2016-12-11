@@ -1,0 +1,5 @@
+API/public/stylesheets/*.map
+API/.sass-cache
+API/public/apiDocs
+API/node_modules
+API/data/
